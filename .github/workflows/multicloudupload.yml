@@ -41,7 +41,10 @@ jobs:
              sleep 5
              
              
-             cat outputs.txt outputs1.txt outputs2.txt | jq
+             grep -o -E "https?://[][[:alnum:]._~:/?#@!$&'()*+,;%-]+" outputs.txt outputs2.txt outputs3.txt >>link.txt
+             
+             cat link.txt | jq
+             
              echo "LONG LIVE KINDEVILS"
               sleep 3m
              
