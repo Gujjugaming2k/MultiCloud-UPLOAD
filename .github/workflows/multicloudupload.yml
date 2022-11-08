@@ -47,7 +47,7 @@ jobs:
              echo "$(<link.txt )"
              
              echo "LONG LIVE KINDEVILS"
-              sleep 3m
+
              
              
 #kindevilsorg
