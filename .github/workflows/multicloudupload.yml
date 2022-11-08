@@ -43,7 +43,7 @@ jobs:
              
              grep -o -E "https?://[][[:alnum:]._~:/?#@!$&'()*+,;%-]+" outputs.txt outputs1.txt outputs2.txt >>link.txt
              
-             cat link.txt | jq
+             cat link.txt 
              
              echo "LONG LIVE KINDEVILS"
               sleep 3m
