@@ -31,11 +31,11 @@ jobs:
          echo "👁️‍🗨️Downloading the file and Uploading to 3 Different servers👁️‍🗨️"
             sleep 3
              sudo apt install jq -y
-             curl -F "file=@${{ github.event.inputs.Filename }}" https://api.anonfiles.com/upload?token=${{ github.event.inputs.Token }} >>outputs.txt
+             curl -F 'file=@${{ github.event.inputs.Filename }}' https://api.anonfiles.com/upload?token=${{ github.event.inputs.Token }}
              
-             curl -F "file=@${{ github.event.inputs.Filename }}" https://api.letsupload.cc/upload >>outputs1.txt
+             curl -F 'file=@${{ github.event.inputs.Filename }}' https://api.letsupload.cc/upload
            
-             curl -F "file=@${{ github.event.inputs.Filename }}" https://api.filechan.org/upload >>outputs2.txt
+             curl -F 'file=@${{ github.event.inputs.Filename }}' https://api.filechan.org/upload
       - name: Click To View Link
         run: |
              echo "LINKS ARE COMING WAIT FOR 5 SECONDS!!!"
